@@ -2,7 +2,7 @@
 #
 # Multilingual wake words: you must use tts_backend: voxcpm — Piper cannot synthesize
 # arbitrary languages. See configs/prod_voxcpm.yaml (Chinese example: 你好 livekit / nihao livekit).
-model_name: number_one
+model_name: number_two
 
 # Wake word phrases to detect (include spelling variations)
 target_phrases: ["number two", "number do"]
