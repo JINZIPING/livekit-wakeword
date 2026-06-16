@@ -2,10 +2,10 @@
 #
 # Multilingual wake words: you must use tts_backend: voxcpm — Piper cannot synthesize
 # arbitrary languages. See configs/prod_voxcpm.yaml (Chinese example: 你好 livekit / nihao livekit).
-model_name: hey_livekit
+model_name: number_one
 
 # Wake word phrases to detect (include spelling variations)
-target_phrases: ["hey livekit"]
+target_phrases: ["number one", "number won"]
 
 # ============================================================================
 # Data Generation
@@ -29,20 +29,21 @@ tts_batch_size: 50
 # Suggestion: add words that sound like your wake word, common misheard phrases
 custom_negative_phrases:
   # Bare wake word without prefix — most common false trigger
-  - "livekit"
-  - "live kit"
+  - "one"
+  - "won"
   # Phonetically similar prefixes
-  - "hey libby"
-  - "hey livid"
-  - "hey lidocaine"
-  - "hey liquid"
-  - "hey linux"
-  - "hey lyric"
+  - "number on"
+  - "number none"
+  - "number bun"
+  - "number fun"
+  - "number sun"
+  - "number run"
+
   # Partial/adjacent phrases
-  - "play live"
-  - "they live"
-  - "hey look at"
-  - "hey look it"
+  - "number two"
+  - "number four"
+  - "number ten"
+  - "number five"
 
 # ============================================================================
 # TTS Parameters (VITS + SLERP speaker blending)
